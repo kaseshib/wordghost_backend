@@ -1,5 +1,13 @@
 const app = require('express')();
 const fs = require('fs')
+const cors = require('cors')
+
+var corsOptions = {
+    origin: 'https://wordghost-d4c0f.web.app/',
+    optionsSuccessStatus: 200 // For legacy browser support
+}
+
+app.use(cors(corsOptions));
 
 let rawwords = fs.readFileSync('collins.json');
 
