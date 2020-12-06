@@ -3,7 +3,7 @@ const fs = require('fs')
 const cors = require('cors')
 
 var corsOptions = {
-    origin: ['https://wordghost-d4c0f.web.app', 'localhost:3000', 'wordghost.org'],
+    origin: ['https://wordghost-d4c0f.web.app', 'localhost:3000', 'https://wordghost.org'],
     optionsSuccessStatus: 200 // For legacy browser support
 }
 
